@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GusDelMundo</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Evita barras de desplazamiento */
+        }
+        #logo {
+            width: 100vw; /* 100% del ancho del viewport */
+            height: 12vh; /* 100% de la altura del viewport */
+            object-fit: cover; /* Mantiene la proporción del logo y cubre el área */
+            display: block;
+        }
+        .content {
+            text-align: center;
+            padding: 12px;
+            position:absolute;
+            background-color: #940688;
+            color: rgb(255, 255, 255);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Asegura que el contenido esté encima del logo */
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #940688;
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Estilos para los enlaces que se muestran como botones */
+        a.button {
+            display: inline-block;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: underline;
+            color: rgb(255, 255, 255);
+            background-color: red;
+            border-radius: 1px;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 15px; /* Añade espacio entre los botones */
+        }
+        a.button:hover {
+            background-color: darkred;
+            color: #f8f8f8;
+    
+        }
+        .social-links {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="channels4_banner.jpg" alt="Logo GusDelMundo">
+    </header>
+    <div class="content">
+        <h1>Yo soy GusDelmundo</h1>
+        <p>QA Betatester para Tencent y Activision. Apasionado de los videojuegos y la ciberseguridad, aqui tienes algo de mi trabajo.</p>
+        <div class="social-links">
+            <a class="button" href="https://www.tiktok.com/@gusdelmundo" target="_blank">TikTok</a>
+            <a class="button" href="https://www.facebook.com/Guscasttcortt" target="_blank">Facebook</a>
+            <a class="button" href="https://www.youtube.com/channel/UCaLAwsFO-T-GIbu098MoD0g" target="_blank">Youtube</a>
+            <a class="button" href="https://wa.me/+523347542949" target="_blank">Whatsapp</a>
+            <a class="button" href="https://www.instagram.com/gusdelmundo/" target="_blank">Instagram</a>
+        </div>
+    </div>
+    <footer class="footer">
+        Derechos reservados @GusDelMundo 2024
+    </footer>
+</body>
+</html>

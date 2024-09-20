@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Evita barras de desplazamiento */
+}
+#logo {
+    width: 100vw; /* 100% del ancho del viewport */
+    height: 500vh; /* 100% de la altura del viewport */
+    object-fit: fill; /* Mantiene la proporción del logo y cubre el área */
+    display: block;
+}
+.content {
+    text-align: justify;
+    padding: 15px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Asegura que el contenido esté encima del logo */
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f50a0a;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos para los enlaces que se muestran como botones */
+a {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(241, 12, 12);
+    background-color: red;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+a:hover {
+    background-color: darkred;
+    color: #e9329d;
+}
